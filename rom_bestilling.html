@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="no">
+    <head>
+
+        <meta charset="UTF-8"><!--velgerspråket alfabetet vi skal bruke for nettsiden-->
+    
+        <title> reserver rom.html</title><!--vi navngir siden gjennom <title></title>-->
+    
+     </head>
+<body>
+    <form action="takk_for_bestilling.html">
+        <h1>Reserver rom</h1>
+            <b>antall gjester:</b><input type="range" min="1" max="10" value="1"  oninput="rangevalue.innerText = this.value" required>
+            <span id="rangevalue"></span> <!--bruker for å få verdi ved siden av--><br>
+<br>
+
+<br>
+<h2>Formelle Detaljer</h2>
+<lable>Fornavn:</lable>
+<br>
+<input type="text" name="navn" placeholder="Ola" required>
+<br><br>
+<lable>Etternavn:</lable>
+<br>
+<input type="text" name="navn" placeholder="Nordmann" required>
+<br><br>
+<lable>Mobil:</lable>
+<br>
+<input type="number" name="alder" placeholder="1234567" required>
+<br><br>
+<h2> Hvilken romtype du ønsker?</h2><br>
+<input type="checkbox"  name="enkeltrom" id="enkeltrom">
+<spam>Enkeltrom</spam>
+<br>
+<input type="checkbox"  name="Dobbel rom" id="Dobbel rom">
+<spam>Dobbel rom</spam>
+<br>
+<input type="checkbox"  name="Familie rom" id="Familie rom">
+<spam>Familie rom</spam><br><br>
+
+<h2>Datoer</h2>
+<b>Innsjekkings Dato:</b>
+<input type="date" required>
+<b>klokkeslett:</b>
+<input type="time" required>
+<br><br>
+
+<b>Utsjekkings Dato:</b>
+<input type="date" required>
+<b>klokkeslett:</b>
+<input type="time" required>
+<br><br>
+
+<button>send</button>
+
+</form>
+
+</body>

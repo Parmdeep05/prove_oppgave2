@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="no">
+
+<head>
+
+    <meta charset="UTF-8"><!--velgerspråket alfabetet vi skal bruke for nettsiden-->
+
+    <title> oppgave 2.html</title><!--vi navngir siden gjennom <title></title>-->
+
+ </head>
+
+
+<body>
+
+    <h1>Deep hotell</h1>
+
+<section class="nyheter">
+
+<a href="vaar_historie.html" target="_blank" class="seks-kolonner to-rader">
+
+    <img src="hotell.jpg">
+
+    <h1>Hotellets historie</h1>
+
+</a>
+
+<a href="meny.html" target="_blank" class="tre-kolonner">
+
+    <img src="menu.png">
+
+    <h1>Se vår meny her!</h1>
+
+</a>
+
+<a class="tre-kolonner" id="flex">
+    <h3>Vi har mange unike fasiliteter!<br> som for eksempel:<br> 
+        <ul>
+            <li>Svømmebasseng</li>
+            <li>Spa</li>
+            <li>Bar</li>
+            <li>Klimanlegg</li>
+        </ul>
+</h3>
+</a>
+
+<a  href="rom_bestilling.html" target="_blank" class="tre-kolonner">
+
+    <img src="hotel-hall.jpg" style="object-position: bottom;">
+
+    <h1>Bestill rom her!</h1>
+
+    <a href="vureder_oss.html" target="_blank" class="tre-kolonner" >
+
+        <img src="stjerne3.png">
+
+        <h1>Vurder oss her</h1>
+
+
+
+</section>
+
+</body>
+<style>
+
+    body{
+
+        background-color: lightgray;
+
+    }
+
+    .nyheter {
+
+        display: grid;
+
+        grid-template-columns: repeat(10, 1fr);
+
+        max-width: 80rem;
+
+        grid-auto-rows: minmax(12rem, 12rem);
+
+        gap: 1rem;
+
+    }
+
+    .nyheter a {
+
+        background-color: #eee;
+
+        display: flex;
+
+        align-items: flex-end;
+
+        padding-left: 1rem;
+
+        padding-bottom: 1rem;
+
+        position: relative;
+
+        font-family: sans-serif;
+
+    }
+
+    /*#meny{
+        position: absolute;
+    }*/
+
+    .nyheter h1 {
+
+
+
+        position: absolute;
+
+        margin: 0;
+
+        color: white;
+
+        background: rgba(128, 128, 128, 0.562);
+
+    }
+
+    .nyheter img {
+
+        position: absolute;
+
+        left: 0;
+
+        top: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+
+    }
+
+    h1{
+        background-color: blueviolet;
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+    .tre-kolonner { grid-column: span 5; }
+
+    .fire-kolonner { grid-column: span 5; }
+
+    .seks-kolonner { grid-column: span 5; }
+
+    .to-rader { grid-row: span 2;}
+
+    .neg{ grid-row: span 2;}
+
+    #flex{
+                display: flex;
+                background-color: orange;
+                height: 172.5px;
+                gap: 50px;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+</style>
+</html>
